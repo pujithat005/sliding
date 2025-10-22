@@ -8,26 +8,27 @@
 </head>
 <body>
     <header>
-        <label id="L1">Sliding - Slide 1</label>
+        <label id=""L1">Sliding-Slide 1</label>
+        
     </header>
     <section>
         <div class="slides" id="slides">
-            <div class="slide s1"></div>
-            <div class="slide s2"></div>
-            <div class="slide s3"></div>
-            <div class="slide s4"></div>
+        <div class="slide s1"></div>
+        <div class="slide s2"></div>
+        <div class="slide s3"></div>
+        <div class="slide s4"></div>
         </div>
     </section>
     <footer>Designed by POOJITHA</footer>
 </body>
 <script>
-    let slideIndex=1, slideCount=4;
-    function autoSlide(){
-        let nextSlide = (slideIndex++) % slideCount;
-        document.getElementById("slides").style.transform = `translateX(-${nextSlide * 100}%)`;
-        document.getElementById("L1").innerHTML = `Sliding - Slide ${nextSlide + 1}`;
+    let slideindex=1, slidecount=4;
+    function autoslide(){
+        let nextSlide = (slideindex++) % slidecount;
+        document.getElementById("slides").style.transform=`translateX(-${nextSlide * 100}%)`;
+        document.getElementById("L1").innerHTML`Sliding - Slide ${nextSlide + 1}`;
     }
-    window.onload = function(){
+    window.onload=function(){
         setInterval(autoslide, 3000);
     }
 </script>
